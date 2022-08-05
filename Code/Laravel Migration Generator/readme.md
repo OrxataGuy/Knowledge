@@ -1,0 +1,13 @@
+# Generate models and migrations from an existing database
+
+1. Run `composer require --dev "kitloong/laravel-migrations-generator"`.
+2. Run `composer require orangehill/iseed`
+3. Make sure the path in the `path` variable of `vendor/orangehill/iseed/src/config/config.php` is the same as the seeders in your application. If it isn't, update it.
+4. Launch `composer require release/laravel`.
+5. Add the `Reliese\Coders\CodersServiceProvider::class` provider to `config/app.php`.
+6. Run `php artisan vendor:publish --tag=reliese-models`.
+7. Make sure the connection information in the `.env` file is correct.
+8. Run `php artisan code:models` to generate the models.
+9. Run `php artisan migrate:generate` to generate the migrations.
+10. Run `php artisan seed users,roles,user_roles --force` to generate the seeds (in this case it would be from the users, roles and user_roles tables).
+

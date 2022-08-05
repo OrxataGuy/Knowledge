@@ -1,0 +1,15 @@
+ <script src="https://www.google.com/recaptcha/api.js?render=YOUR_PUBLIC_TOKEN_KEY"></script>
+  <script>
+        /** Listen to the SUBMIT event raised by the form. */
+        $('#form').submit(e => {
+            e.preventDefault(); // Prevents the event from following its normal course.
+            grecaptcha.ready(() => {
+                const webtoken = 'YOUR_PUBLIC_TOKEN_KEY', // Token generated on the google web for this captcha.
+                      act = 'ACTION'; // The action to perform.
+                grecaptcha.execute(webtoken, {action: act}).then(token => {
+                    $('#token').val(token); // Write the value of the test result.
+                    $('#form').unbind('submit').submit(); // The SUBMIT event continues.
+                });
+            });
+        });
+    </script>
