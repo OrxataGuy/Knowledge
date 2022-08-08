@@ -3,17 +3,17 @@
 ###########################################################################################################
 #                                                                                                         #
 #   Author: OrxataGuy                                                                                     #
-#   						                                                                              #
+#   						                                                          #
 #                                                                                                         #
 #   Description:                                                                                          #
 #   This function will transform a generic formula expression to a ternary expression compatible with     #
-#   PHP. For exemple:		                                                                              #
+#   PHP. For exemple:		                                                                          #
 #                                                                                                         #
-#   $a = 2.4, $b = 4.2, $c = ($a+$b)*100+6;			                                                      #
+#   $a = 2.4, $b = 4.2, $c = ($a+$b)*100+6;			                                          #
 #   $formula = "if($a>$b, if($a>2*$b, 'A is too large', 'A is larger'),if($c==666, 'Oh no! A demon!',	  #
-#   'B is larger'))`;                                                                 					  #		
+#   'B is larger'))`;                                                                 			  #		
 #                                                                                                         #
-#   parseExpr($formula) ->                                                                                 #
+#   parseExpr($formula) ->                                                                                #
 #   (2.4>4.2)?((2.4>2*4.2)?'A is too large':'A is larger'):((666==666)?'Oh no! A demon!':'B is larger')   #
 #                                                                                                         #
 #                                                                                                         #
