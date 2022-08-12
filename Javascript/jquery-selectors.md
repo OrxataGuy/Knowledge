@@ -22,9 +22,9 @@ dom = $("span[name!='dark-type-evolution']");
 
 /*  
 dom = { 
-  ► 0: <span class='pokemon eevee' name='electric-type-evolution'>Jolteon</span>
-  ► 1: <span class='pokemon eevee' name='fairy-type-evolution'>Sylveon</span>
-  ► 2: <span class='pokemon eevee' name='fire-type-evolution'>Flareon</span>
+  ► 0: <span class='pokemon eevee' name='normal-type'>Eevee</span>
+  ► 1: <span class='pokemon eevee' name='electric-type-evolution'>Jolteon</span>
+  ► 2: <span class='pokemon eevee' name='fairy-type-evolution'>Sylveon</span>
   ...
 };
 */
