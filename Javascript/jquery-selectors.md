@@ -6,10 +6,11 @@ let dom = $("tag[attr='chain']");
 
 dom = $("span[name='dark-type-evolution']"); 
 
-/*  EXPECTED OUTPUT
-dom = [ 
-  <span class='pokemon eevee' name='dark-type-evolution'>Umbreon</span>
-];
+/*
+dom = { 
+  ► 0: <span class='pokemon eevee' name='dark-type-evolution'>Umbreon</span>
+    length: 1
+};
 */
 ```
 
@@ -19,13 +20,13 @@ let dom = $("tag[attr!='chain']");
 
 dom = $("span[name!='dark-type-evolution']");
 
-/*  EXPECTED OUTPUT
-dom = [ 
-  <span class='pokemon eevee' name='electric-type-evolution'>Jolteon</span>
-  <span class='pokemon eevee' name='fairy-type-evolution'>Sylveon</span>
-  <span class='pokemon eevee' name='fire-type-evolution'>Flareon</span>
+/*  
+dom = { 
+  ► 0: <span class='pokemon eevee' name='electric-type-evolution'>Jolteon</span>
+  ► 1: <span class='pokemon eevee' name='fairy-type-evolution'>Sylveon</span>
+  ► 2: <span class='pokemon eevee' name='fire-type-evolution'>Flareon</span>
   ...
-];
+};
 */
 ```
 
@@ -35,10 +36,11 @@ let dom = $("tag[attr^='chain']");
 
 dom = $("span[name^='fire']"); 
 
-/*  EXPECTED OUTPUT
-dom = [ 
-  <span class='pokemon eevee' name='fire-type-evolution'>Flareon</span>
-];
+/* 
+dom = { 
+  ► 0: <span class='pokemon eevee' name='fire-type-evolution'>Flareon</span>
+    length: 1
+};
 */
 ```
 
@@ -48,13 +50,13 @@ let dom = $("tag[attr$='chain']");
 
 dom = $("span[name$='evolution']"); 
 
-/*  EXPECTED OUTPUT
-dom = [ 
-  <span class='pokemon eevee' name='dark-type-evolution'>Umbreon</span>
-  <span class='pokemon eevee' name='electric-type-evolution'>Jolteon</span>
-  <span class='pokemon eevee' name='fairy-type-evolution'>Sylveon</span>
+/*  
+dom = { 
+  ► 0: <span class='pokemon eevee' name='dark-type-evolution'>Umbreon</span>
+  ► 1: <span class='pokemon eevee' name='electric-type-evolution'>Jolteon</span>
+  ► 2: <span class='pokemon eevee' name='fairy-type-evolution'>Sylveon</span>
   ...
-];
+};
 */
 ```
 
@@ -64,16 +66,19 @@ let dom = $("tag[attr*='chain']");
 
 dom = $("span[class*='eevee']");
 
-/*  EXPECTED OUTPUT
-dom = [ ];
+/*  
+dom = {
+    length: 0
+};
 */
 
 dom = $("span[name*='normal-type']");
 
-/*  EXPECTED OUTPUT
-dom = [ 
-  <span class='pokemon eevee' name='normal-type'>Eevee</span>
-];
+/*  
+dom = {
+  ► 0: <span class='pokemon eevee' name='normal-type'>Eevee</span>
+    length: 1
+};
 */
 ```
 
@@ -84,13 +89,13 @@ let dom = $("tag[attr~='chain']");
 
 dom = $("span[class~='eevee']"); 
 
-/*  EXPECTED OUTPUT
-dom = [ 
-  <span class='pokemon eevee' name='normal-type'>Eevee</span>
-  <span class='pokemon eevee' name='dark-type-evolution'>Umbreon</span>
-  <span class='pokemon eevee' name='electric-type-evolution'>Jolteon</span>
+/*  
+dom = { 
+  ► 0: <span class='pokemon eevee' name='normal-type'>Eevee</span>
+  ► 1: <span class='pokemon eevee' name='dark-type-evolution'>Umbreon</span>
+  ► 2: <span class='pokemon eevee' name='electric-type-evolution'>Jolteon</span>
   ...
-];
+};
 */
 ```
 
