@@ -3,7 +3,7 @@
 1. Run `composer require --dev "kitloong/laravel-migrations-generator"`.
 2. Run `composer require orangehill/iseed`
 3. Make sure the path in the `path` variable of `vendor/orangehill/iseed/src/config/config.php` is the same as the seeders in your application. If it isn't, update it.
-4. Launch `composer require release/laravel`.
+4. Launch `composer require reliese/laravel`.
 5. Add the `Reliese\Coders\CodersServiceProvider::class` provider to `config/app.php`.
 6. Run `php artisan vendor:publish --tag=reliese-models`.
 7. Make sure the connection information in the `.env` file is correct.
