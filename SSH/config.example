@@ -1,17 +1,17 @@
 # Lola github account: 
 Host lola.github.com
    HostName github.com
-   IdentityFile ~/.ssh/lola_key
+   IdentityFile ~/.ssh/Lola
    IdentitiesOnly yes
    
 # John github account:
 Host john.github.com
    HostName github.com
-   IdentityFile ~/.ssh/john_key
+   IdentityFile ~/.ssh/John
    IdentitiesOnly yes
 
 # Default github account:
 Host github.com
    HostName github.com
-   IdentityFile ~/.ssh/orxata_key
+   IdentityFile ~/.ssh/OrxataGuy
    IdentitiesOnly yes
