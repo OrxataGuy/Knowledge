@@ -77,7 +77,7 @@ Inside the `config` file, we'll say to the SSH protocol how to use the keys. Act
 # Lola github account: 
 Host lola.github.com
    HostName github.com
-   IdentityFile ~/.ssh/lola_key
+   IdentityFile ~/.ssh/Lola
    IdentitiesOnly yes
 ```
 And it you'll have to create new registers like this, if you have another user called John, you can just copy and paste it changing the name Lola with John.
