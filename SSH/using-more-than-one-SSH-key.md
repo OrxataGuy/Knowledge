@@ -19,6 +19,7 @@ There are several alternatives to RSA that can be used for SSH (Secure Shell) au
 2. **ECDSA (Elliptic Curve Digital Signature Algorithm):** ECDSA is a public-key algorithm that is based on the mathematics of elliptic curves. It is considered to be more secure than RSA and DSA because it uses smaller key sizes to achieve the same level of security.
 3. **Ed25519:** Is a public-key algorithm that is based on a new type of curve called Edwards curve. It is considered to be more secure than RSA and DSA because it uses smaller key sizes to achieve the same level of security and it's been designed to be resistant to side-channel attacks.
 4. **SSH-Ed25519:** This is a combination of the SSH protocol and the Ed25519 public-key algorithm. It provides secure shell access to remote servers with the added security of the Ed25519 algorithm.
+
 Each algorithm has its own set of benefits and trade-offs, and which one to use depends on the specific needs of the organization.
 
 Now you know all you need to understand all the steps we'll perform at this tutorial. We'll use only the RSA algorithm. but you could use any algorithm of the list, so feel free to use them if you need them.
