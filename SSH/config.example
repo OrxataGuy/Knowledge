@@ -1,0 +1,17 @@
+# Lola github account: 
+Host lola.github.com
+   HostName github.com
+   IdentityFile ~/.ssh/lola_key
+   IdentitiesOnly yes
+   
+# John github account:
+Host john.github.com
+   HostName github.com
+   IdentityFile ~/.ssh/john_key
+   IdentitiesOnly yes
+
+# Default github account:
+Host github.com
+   HostName github.com
+   IdentityFile ~/.ssh/orxata_key
+   IdentitiesOnly yes
